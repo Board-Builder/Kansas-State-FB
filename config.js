@@ -12596,11 +12596,14 @@ window.BOARD_CONFIG = {
      K-State equivalents of HC / Chief of Staff / GM: */
   boardAdmins: ["Klein HC", "Trey Scott GM", "Greg Svarczkopf Dir Recruiting"],
   seedProspects: _SEED_PROSPECTS,
-  staffPassword: "Recruit26", // change before sharing with staff
-  // Shared cloud board (multi-user sync): create a free Supabase project,
-  // run template/schema.sql in its SQL editor, then paste the keys here.
-  // Without keys the app runs in single-device mode.
-  // supabase: { url: "https://YOUR-PROJECT.supabase.co", anonKey: "YOUR-ANON-KEY" },
+  staffPassword: "Recruit26", // legacy fallback — unused while staffAuth is set
+  /* Shared cloud board — live multi-user sync (boards, evals, calls, notes,
+     passwords, deactivations) across every device. Publishable key is safe
+     to ship; RLS + schema live in template/schema.sql. */
+  supabase: {
+    url: "https://suodahhxtahzqoerpkjg.supabase.co",
+    anonKey: "sb_publishable_2jpfy4aDZ1B41CmLOLzQrg_KlrfCGA0",
+  },
   // Compliance calendar: template ships the 2026-27 FBS calendar. Override
   // any date without a template change via recruitingCalendar: {...} — same
   // shape as DEFAULT_CALENDAR in the app (periods / portalWindows / keyDates).
