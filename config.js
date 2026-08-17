@@ -12573,6 +12573,22 @@ window.BOARD_CONFIG = {
     accent: "#D1D1D1",  // K-State silver
   },
   staffGroups: _STAFF_GROUPS,
+  /* 2026 schedule (announced Jan 21, 2026). Shown on the calendar view.
+     Times CT; TBA games get times as the Big 12 announces them. */
+  games: [
+    { date: "2026-09-05", opponent: "Nicholls",                              home: true,  time: "6:00 PM CT" },
+    { date: "2026-09-12", opponent: "Washington State", short: "Wash St",    home: true,  time: "11:00 AM CT" },
+    { date: "2026-09-19", opponent: "Tulane",                                home: true,  time: "11:00 AM CT" },
+    { date: "2026-09-26", opponent: "Cincinnati",                            home: false },
+    { date: "2026-10-10", opponent: "Houston",                               home: true },
+    { date: "2026-10-17", opponent: "Kansas",                                home: true },
+    { date: "2026-10-24", opponent: "Arizona State",   short: "Arizona St",  home: false },
+    { date: "2026-10-31", opponent: "Colorado",                              home: false },
+    { date: "2026-11-07", opponent: "Oklahoma State",  short: "Okla St",     home: true },
+    { date: "2026-11-14", opponent: "TCU",                                   home: false },
+    { date: "2026-11-21", opponent: "Arizona",                               home: true },
+    { date: "2026-11-28", opponent: "Iowa State",      short: "Iowa St",     home: false },
+  ],
   /* Board admins — the only people who can stack the MAIN board and view
      every staffer's personal board. Names must match staffGroups exactly.
      Everyone else gets the main board view-only plus their own board.
